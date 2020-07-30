@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pannellum Tour</title>
+
+  {{!-- Font Awesome --}}
+  <link rel="stylesheet" href="/css/all.min.css">
+  {{!-- Google Fonts --}}
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  {{!-- Pannellum CSS --}}
+  <link rel="stylesheet" href="/css/pannellum.css" />
+  {{!-- Bootstrap CSS --}}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {{!-- Custom CSS --}}
+  <link rel="stylesheet" href="/css/virtual-tour-guided.css">
+</head>
+
+<body>
+
+
+  {{!-- Step 3 --}}
+  <div id="step-3">
+
+    <div id="tour-container">
+    </div>
+
+    {{!-- Cam UI --}}
+    <span id="cam-side-icon" class="action-icon-dark" data-toggle="tooltip" title="Webcam">
+      <i class="fas fa-video"></i>
+    </span>
+
+    <div id="cam-card" class="card">
+      <div id="viewerContainer"></div>
+      <div id="myself"></div>
+
+      <span id="hang-up" class="d-flex-c-c" data-toggle="tooltip" title="End tour">
+        <i class="fas fa-power-off"></i>
+      </span>
+
+      <span class="minimize">
+        <i class="fas fa-window-minimize"></i>
+      </span>
+    </div>
+
+    {{!-- Floor plan --}}
+    <div id="floor-plan-container">
+      {{!-- property name large --}}
+      <div id="property-name" class="position-absolute" data-toggle="modal" data-target="#property-name-modal">
+        <h6 class="position-relative mb-0"></h6>
+      </div>
+
+      {{!-- canvas --}}
+      <canvas id="floor-plan"></canvas>
+
+      {{!-- Close --}}
+      <button id="floor-plan-close" type="button" class="floor-plan-icon d-flex-c-c" onclick="closeFloorPlan()" data-toggle="tooltip" data-placement="left" title="Close" tabindex="-1">
+        <i class="fas fa-times"></i>
+      </button>
+      {{!-- Enlarge --}}
+      <button id="floor-plan-enlarge" type="button" class="floor-plan-icon d-flex-c-c" onclick="toggleFloorPlan()" data-toggle="tooltip" data-placement="left" title="Expand" tabindex="-1">
+        <i class="fas fa-expand-arrows-alt"></i>
+      </button>
+      {{!-- Hidden from display (used for drawing points on canvas) --}}
+      <img id="floor-plan-point" src="/pics/virtualtourpics/helpers/point.png">
+      <img id="floor-plan-point-active" src="/pics/virtualtourpics/helpers/point_active.png">
+    </div>
+
+    <span id="floor-plan-control-small" class="action-icon-dark bottom" onclick="toggleFloorPlan()"
+      data-toggle="tooltip" title="Layout">
+      <i class="far fa-map"></i>
+    </span>
+
+  </div>
+  {{!-- Step 3 --}}
+
+  {{!-- Step 4 --}}
+  <div class="container-fluid" id="step-4">
+
+    <div class="row">
+      <div class="col-md-8 mt-5 mx-auto text-center">
+        <div id="thank-you-note">
+          <h1>Thanks for your visit.</h1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  {{!-- Step 4 --}}
+
+
+  {{!-- Confirm Tour End Modal --}}
+  <div class="modal fade" id="confirm-end-tour-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <div class="row">
+              <div class="col-12 mb-3 text-center">
+                Are you sure you want to end the tour?
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-2"></div>
+              <div class="col-4">
+                <button type="button" class="btn btn-block modal-btn-blue" data-dismiss="modal">Cancel</button>
+              </div>
+              <div class="col-4">
+                <button type="button" id="end-tour" class="btn btn-block modal-btn-red"
+                  data-dismiss="modal">End Tour</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- Confirm Tour End Modal --}}
+
+
+  {{!-- Custom Tag Content Modal --}}
+  <div class="modal fade" id="custom-tag-content-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container-fluid">
+
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="text-center">
+                  <i class="fas fa-info-circle fa-lg"></i>
+                </div>
+                {{!-- Title --}}
+                <h5 id="custom-tag-title" class="mb-0"></h5>
+              </div>
+            </div>
+
+            <hr class="media-divider">
+
+            <div class="row">
+              {{!-- Text --}}
+              <div id="custom-tag-text" class="col-12">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {{!-- Close --}}
+        <button type="button" class="modal-close" data-dismiss="modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  {{!-- Custom Tag Content Modal --}}
+
+
+
+  {{!-- Pannellum JS --}}
+  <script src="/js/libpannellum.js"></script>
+  <script src="/js/pannellum.js"></script>
+
+  <!-- BOOTSTRAP JavaScript-->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  {{!-- Custom JS to control pannellum viewer --}}
+  <script type="module" src="/js/guided-tour/virtual-tour-guide.js"></script>
+  {{!-- Custom JS --}}
+  <script type="module" src="/js/guided-tour/uif-guided.js"></script>
+</body>
+
+</html>

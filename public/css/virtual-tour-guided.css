@@ -1,0 +1,623 @@
+html,
+body {
+  font-family: 'Montserrat', 'Helvetica Neue',  Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* Utils */
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.d-flex-c-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.action-icon-dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  z-index: 9;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 3px;
+  background-color: rgba(30, 35, 47, 0.8);
+  color: rgba(222, 222, 222, 0.8);
+  -webkit-box-shadow:
+    0 3.3px 4.7px rgba(0, 0, 0, 0.101),
+    0 11.2px 15.9px rgba(0, 0, 0, 0.149),
+    0 50px 71px rgba(0, 0, 0, 0.25);
+  box-shadow:
+    0 3.3px 4.7px rgba(0, 0, 0, 0.101),
+    0 11.2px 15.9px rgba(0, 0, 0, 0.149),
+    0 50px 71px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.action-icon-dark:hover,
+.action-icon-dark:focus {
+  color: rgba(222, 222, 222, 1);
+  background-color: rgba(30, 35, 47, 1);
+}
+
+.action-icon-dark.bottom {
+  position: fixed;
+  bottom: 10px;
+}
+
+.media-divider {
+  background-color: #ffffff;
+  height: 2px;
+  border-radius: 2px;
+}
+
+/* Step 3 */
+
+#step-3 {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Fix for: Soft Keyboard (Android) breaks layout */
+#tour-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Step 3 - Floor Plan */
+
+#floor-plan-container {
+  position: absolute;
+  z-index: 100;
+  left: 110%;
+  top: 110%;
+  width: 0px;
+  height: 0px;
+  background-color: rgba(222, 222, 222, 0.8);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  border-radius: 4px;
+  padding: 4px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.2);
+          box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.2);
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+#property-name {
+  left: 50%;
+  top: -22px;
+  max-width: 85%;
+  height: 0;
+  background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#property-name h6 {
+  left: -50%;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: rgba(30, 35, 47, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 6px 12px;
+  border: 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.2);
+          box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.2);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#property-name h6:hover,
+#property-name h6:focus {
+  color: rgba(30, 35, 47, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#floor-plan {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.floor-plan-icon {
+  position: absolute;
+  right: -6px;
+  z-index: 101;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-weight: bold;
+  line-height: 1;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.2);
+          box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.floor-plan-icon:hover,
+.floor-plan-icon:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#floor-plan-close {
+  top: -6px;
+  color: rgba(220, 53, 69, 0.8);
+}
+
+#floor-plan-close:hover,
+#floor-plan-close:focus {
+  color: rgba(220, 53, 69, 1);
+}
+
+#floor-plan-enlarge {
+  top: 17px;
+  color: rgba(22, 97, 52, 0.8);
+  font-size: 0.8rem;
+}
+
+#floor-plan-enlarge:hover,
+#floor-plan-enlarge:focus {
+  color: rgba(22, 97, 52, 1);
+}
+
+#floor-plan-point,
+#floor-plan-point-active {
+  display: none;
+}
+
+/* Step 3 Webcam */
+
+#cam-side-icon {
+  position: absolute;
+  top: 260px;
+  left: -50px;
+}
+
+#cam-card {
+  position: absolute;
+  z-index: 10;
+  top: 60px;
+  left: 10px;
+  width: 260px;
+  height: 250px;
+  background-color: rgba(222, 222, 222, 0.8);
+  border: 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(30, 35, 47, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(30, 35, 47, 0.2);
+  -webkit-transition: left 0.5s ease-in-out;
+  -o-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+}
+
+#viewerContainer {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 160px;
+  height: 200px;
+  overflow: hidden;
+  background-color: transparent;
+  border: 4px solid #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.1);
+  box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.1);
+}
+
+#myself {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(30, 35, 47, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(30, 35, 47, 0.2);
+}
+
+#hang-up {
+  position: absolute;
+  z-index: 11;
+  bottom: 50px;
+  right: 27.5px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.1);
+          box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.1);
+  color: rgba(222, 222, 222, 0.8);
+  background-color: rgba(220, 53, 69, 0.8);
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#hang-up:hover,
+#hang-up:focus {
+  color: rgba(222, 222, 222, 1);
+  background-color: rgba(220, 53, 69, 1);
+}
+
+#floor-plan-control-small {
+  right: 130px;
+}
+
+#cam-card .minimize {
+  position: absolute;
+  z-index: 11;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  color: rgba(30, 35, 47, 0.8);
+  background-color: #ffffff;
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.2);
+          box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.2);
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+#cam-card .minimize:hover,
+#cam-card .minimize:focus {
+  color: rgba(30, 35, 47, 1);
+}
+
+#cam-card .minimize .fa-window-minimize {
+  position: absolute;
+  top: 1px;
+  left: 4.5px;
+  font-size: 0.7rem;
+}
+
+/* Step 4 */
+
+#step-4 {
+  width: 100%;
+  opacity: 0;
+  display: none;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#thank-you-note {
+  padding: 20px;
+  color: rgba(30, 35, 47, 1);
+  background-color: rgba(222, 222, 222, 0.8);
+  border: 0;
+  border-radius: 4px;
+}
+
+/* Loading Container */
+
+#loadingContainer {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(222, 222, 222, 0.8);
+  display: none;
+}
+
+#loadingContainer .jumbotron {
+  max-width: 320px;
+  border: 0;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Alert */
+
+.alert {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+}
+
+.alert .alert-text {
+  width: 90%;
+}
+
+/* Tooltip */
+
+.tooltip-inner {
+  background-color: #ffffff;
+  color: rgba(30, 35, 47, 1);
+  font-weight: bold;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+  border-top-color: #ffffff;
+}
+.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {
+  border-right-color: #ffffff;
+}
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #ffffff;
+}
+.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before {
+  border-left-color: #ffffff;
+}
+
+/* Modal */
+
+.modal-content {
+  background-color: rgba(222, 222, 222, 0.8);
+  color: rgba(30, 35, 47, 1);
+  border: 0;
+  font-weight: bold;
+}
+
+.modal-content .modal-close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -6px;
+  right: -6px;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  border: 0;
+  border-radius: 50%;
+  color: rgba(220, 53, 69, 0.8);
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.2);
+          box-shadow: 0 4px 10px 0 rgba(30, 35, 47, 0.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-content .modal-close:hover,
+.modal-content .modal-close:focus {
+  color: rgba(220, 53, 69, 1);
+}
+
+.modal-btn-red {
+  color: rgba(222, 222, 222, 0.8);
+  background-color: rgba(220, 53, 69, 0.8);
+  border: 0;
+  border-radius: 30px;
+}
+
+.modal-btn-red:hover,
+.modal-btn-red:focus {
+  color: rgba(222, 222, 222, 1);
+  background-color: rgba(220, 53, 69, 1);
+}
+
+.modal-btn-blue {
+  color: rgba(222, 222, 222, 0.8);
+  background-color: rgba(30, 35, 47, 0.8);
+  border: 0;
+  border-radius: 30px;
+}
+
+.modal-btn-blue:hover,
+.modal-btn-blue:focus {
+  color: rgba(222, 222, 222, 1);
+  background-color: rgba(30, 35, 47, 1);
+}
+
+/* Pannellum */
+
+.pnlm-load-box {
+  top: 85px;
+  left: initial;
+  right: 46px;
+  width: 180px;
+  height: 85px;
+  color: rgba(30, 35, 47, 1);
+  background-color: rgba(222, 222, 222, 0.8);
+}
+
+.pnlm-load-box p {
+  margin: 10px 0;
+}
+
+.pnlm-loading {
+  background-color: rgba(30, 35, 47, 1);
+}
+
+.pnlm-lbar-fill {
+  background: rgba(30, 35, 47, 1);
+}
+
+.pnlm-lbar {
+  border: 1px solid rgba(30, 35, 47, 1);
+}
+
+.pnlm-controls-container {
+  top: 5px;
+  left: initial;
+  right: 10px;
+}
+
+div.pnlm-tooltip span {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: rgba(30, 35, 47, 1);
+  text-align: center;
+  max-width: 200px;
+  padding: 5px 10px;
+  margin-left: -220px;
+  cursor: default;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+div.pnlm-tooltip:hover span {
+  visibility: visible;
+}
+
+div.pnlm-tooltip:hover span:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+  bottom: -20px;
+  left: -10px;
+  margin: 0 50%;
+}
+
+.custom-hotspot-symbol {
+  background: transparent;
+  width: 26px;
+  height: 16px;
+  border: 4px solid white;
+  border-radius: 75%;
+  opacity: 0.8;
+}
+
+.custom-tag-symbol {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(30, 35, 47, 0.8);
+  width: 36px;
+  height: 36px;
+  border: 4px solid rgba(30, 35, 47, 0.8);
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(30, 35, 47, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(30, 35, 47, 0.2);
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.custom-tag-symbol:hover,
+.custom-tag-symbol:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(30, 35, 47, 1);
+  border: 4px solid rgba(30, 35, 47, 1);
+}
+
+.custom-tag-symbol::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: '\f129';
+  font-size: 21px;
+  font-weight: 900;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 3.25px);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 576px) {
+  .action-icon-dark {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+  }
+  #cam-side-icon {
+    left: -50px;
+  }
+  #cam-card {
+    left: 10px;
+  }
+  #floor-plan-control-small {
+    right: 160px;
+  }
+  #property-name h6 {
+    top: -10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-height: 415px) {
+  #cam-side-icon {
+    left: 10px;
+  }
+  #cam-card {
+    left: -400px;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  body {
+    overflow-y: scroll;
+  }
+}

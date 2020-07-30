@@ -1,0 +1,1582 @@
+[
+  {
+    "_id": "5d43fbd72dc1fad5f1b5d561",
+    "name": "Demo Property",
+    "type": "Apartment",
+    "address": {
+      "house_nr": "60",
+      "street": "Albulastrasse",
+      "zip": 8048,
+      "city": "Zürich",
+      "country": "Switzerland"
+    },
+    "construction_year": null,
+    "floorList": [
+      {
+        "_id": "5f0211825737e805dc8e61b9",
+        "virtual_tour_id": "5f02121a5737e805dc8e61ba",
+        "name": "Demo Floor",
+        "currency": "CHF",
+        "price": 3500,
+        "price_type": "per month",
+        "num_rooms": 2.5,
+        "size_in_m2": 100,
+        "application_link": null,
+        "last_renovation_year": null,
+        "virtual_tour": {
+          "_id": "5f02121a5737e805dc8e61ba",
+          "property_id": "5d43fbd72dc1fad5f1b5d561",
+          "floorPlan": "/pics/virtualtourpics/floor_plan1.jpg",
+          "floorPlanPointScale": 1,
+          "capturedKeyNumbers": [
+            17,
+            27,
+            37,
+            39,
+            61,
+            65,
+            68,
+            83,
+            87,
+            107,
+            109,
+            173,
+            187,
+            189
+          ],
+          "friction": 1,
+          "ignoreGPanoXMP": true,
+          "default": {
+            "firstScene": "2",
+            "autoLoad": true,
+            "sceneFadeDuration": 0
+          },
+          "scenes": {
+            "2": {
+              "panorama": "/pics/virtualtourpics/2.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 0,
+              "floorPlanX": 179,
+              "floorPlanY": 979,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "3",
+                  "yaw": 0,
+                  "pitch": -45,
+                  "text": "3RD",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "3": {
+              "panorama": "/pics/virtualtourpics/3.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -170,
+              "floorPlanX": 329,
+              "floorPlanY": 979,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "2",
+                  "yaw": 0,
+                  "pitch": -45,
+                  "text": "2ND",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "4",
+                  "yaw": 80,
+                  "pitch": -40,
+                  "text": "4TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "4": {
+              "panorama": "/pics/virtualtourpics/4.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -90,
+              "floorPlanX": 329,
+              "floorPlanY": 859,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "3",
+                  "yaw": 180,
+                  "pitch": -40,
+                  "text": "3RD",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "5",
+                  "yaw": 0,
+                  "pitch": -45,
+                  "text": "5TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "5": {
+              "panorama": "/pics/virtualtourpics/5.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -85,
+              "floorPlanX": 329,
+              "floorPlanY": 729,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "4",
+                  "yaw": 175,
+                  "pitch": -40,
+                  "text": "4TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "9",
+                  "yaw": 85,
+                  "pitch": -40,
+                  "text": "9TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "10",
+                  "yaw": -5,
+                  "pitch": -40,
+                  "text": "10TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "9": {
+              "panorama": "/pics/virtualtourpics/9.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -85,
+              "floorPlanX": 529,
+              "floorPlanY": 729,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "5",
+                  "yaw": -95,
+                  "pitch": -33,
+                  "text": "5TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "22",
+                  "yaw": -5,
+                  "pitch": -40,
+                  "text": "22ND",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "36",
+                  "yaw": 175,
+                  "pitch": -35,
+                  "text": "36TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "10": {
+              "panorama": "/pics/virtualtourpics/10.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -90,
+              "floorPlanX": 329,
+              "floorPlanY": 589,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "5",
+                  "yaw": 178,
+                  "pitch": -45,
+                  "text": "5TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "11",
+                  "yaw": 0,
+                  "pitch": -45,
+                  "text": "11TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "11": {
+              "panorama": "/pics/virtualtourpics/11.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -90,
+              "floorPlanX": 329,
+              "floorPlanY": 459,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-5",
+                  "yaw": -120.8,
+                  "pitch": -5.28,
+                  "title": "Kombi Backofen",
+                  "text": "Der V-ZUG Kombibackofen der neusten Generation ist ein Hochleistungsgerät das höchste Anrpüche bedient. Backen, Mikrowelle und Steamer lassen jedes kochbeisterte Herz höher Schlagen.\n\nMehr Infos unter:\n\nhttps://www.vzug.com/ch/de/product/ch-Catalog/2306510003",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "info",
+                  "id": "tag-id-10",
+                  "yaw": -30.8,
+                  "pitch": -15,
+                  "title": "Küchenplatte",
+                  "text": "Die grosszügige Kochinsel erlaubt Hobbyköchen die volle Entfalltung.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "10",
+                  "yaw": 178,
+                  "pitch": -45,
+                  "text": "10TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "12",
+                  "yaw": -90,
+                  "pitch": -40,
+                  "text": "12TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "15",
+                  "yaw": 0,
+                  "pitch": -30,
+                  "text": "15TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "20",
+                  "yaw": 90,
+                  "pitch": -40,
+                  "text": "20TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "12": {
+              "panorama": "/pics/virtualtourpics/12.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -75,
+              "floorPlanX": 129,
+              "floorPlanY": 459,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-3",
+                  "yaw": 140,
+                  "pitch": -5,
+                  "title": "Kombi Backofen",
+                  "text": "Der V-ZUG Kombibackofen der neusten Generation ist ein Hochleistungsgerät das höchste Anrpüche bedient. Backen, Mikrowelle und Steamer lassen jedes kochbeisterte Herz höher Schlagen.\n\nMehr Infos unter:\n\nhttps://www.vzug.com/ch/de/product/ch-Catalog/2306510003",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "info",
+                  "id": "tag-id-11",
+                  "yaw": 6.26,
+                  "pitch": -16,
+                  "title": "Küchenplatte",
+                  "text": "Die grosszügige Kochinsel erlaubt Hobbyköchen die volle Entfalltung.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "11",
+                  "yaw": 85,
+                  "pitch": -40,
+                  "text": "11TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "13",
+                  "yaw": -18,
+                  "pitch": -30,
+                  "text": "13TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "13": {
+              "panorama": "/pics/virtualtourpics/13.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -75,
+              "floorPlanX": 129,
+              "floorPlanY": 289,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-6",
+                  "yaw": 158.15,
+                  "pitch": -4.24,
+                  "title": "Kombi Backofen",
+                  "text": "Der V-ZUG Kombibackofen der neusten Generation ist ein Hochleistungsgerät das höchste Anrpüche bedient. Backen, Mikrowelle und Steamer lassen jedes kochbeisterte Herz höher Schlagen.\n\nMehr Infos unter:\n\nhttps://www.vzug.com/ch/de/product/ch-Catalog/2306510003",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "info",
+                  "id": "tag-id-3",
+                  "yaw": 103,
+                  "pitch": -43,
+                  "title": "Küchenplatte",
+                  "text": "Die grosszügige Kochinsel erlaubt Hobbyköchen die volle Entfalltung.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "12",
+                  "yaw": 173,
+                  "pitch": -33,
+                  "text": "12TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "14",
+                  "yaw": -15,
+                  "pitch": -33,
+                  "text": "14TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "14": {
+              "panorama": "/pics/virtualtourpics/14.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 45,
+              "floorPlanX": 129,
+              "floorPlanY": 129,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "13",
+                  "yaw": 52,
+                  "pitch": -28,
+                  "text": "13TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "16",
+                  "yaw": -50,
+                  "pitch": -40,
+                  "text": "16TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "15": {
+              "panorama": "/pics/virtualtourpics/15.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 90,
+              "floorPlanX": 329,
+              "floorPlanY": 289,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-7",
+                  "yaw": 16.9,
+                  "pitch": -4.6,
+                  "title": "Kombi Backofen",
+                  "text": "Der V-ZUG Kombibackofen der neusten Generation ist ein Hochleistungsgerät das höchste Anrpüche bedient. Backen, Mikrowelle und Steamer lassen jedes kochbeisterte Herz höher Schlagen.\n\nMehr Infos unter:\n\nhttps://www.vzug.com/ch/de/product/ch-Catalog/2306510003",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "info",
+                  "id": "tag-id-8",
+                  "yaw": 66.2,
+                  "pitch": -28.25,
+                  "title": "Küchenplatte",
+                  "text": "Die grosszügige Kochinsel erlaubt Hobbyköchen die volle Entfalltung.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "11",
+                  "yaw": 0,
+                  "pitch": -30,
+                  "text": "11TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "16",
+                  "yaw": 175,
+                  "pitch": -33,
+                  "text": "16TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "19",
+                  "yaw": -90,
+                  "pitch": -40,
+                  "text": "19TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "16": {
+              "panorama": "/pics/virtualtourpics/16.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 45,
+              "floorPlanX": 329,
+              "floorPlanY": 129,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "14",
+                  "yaw": 145,
+                  "pitch": -40,
+                  "text": "14TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "15",
+                  "yaw": 40,
+                  "pitch": -33,
+                  "text": "15TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "18",
+                  "yaw": -50,
+                  "pitch": -40,
+                  "text": "18TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "18": {
+              "panorama": "/pics/virtualtourpics/18.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 70,
+              "floorPlanX": 529,
+              "floorPlanY": 129,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "16",
+                  "yaw": 115,
+                  "pitch": -40,
+                  "text": "16TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "19",
+                  "yaw": 20,
+                  "pitch": -40,
+                  "text": "19TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "25",
+                  "yaw": -70,
+                  "pitch": -40,
+                  "text": "25TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "19": {
+              "panorama": "/pics/virtualtourpics/19.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 90,
+              "floorPlanX": 529,
+              "floorPlanY": 289,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "15",
+                  "yaw": 90,
+                  "pitch": -40,
+                  "text": "15TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "18",
+                  "yaw": 180,
+                  "pitch": -35,
+                  "text": "18TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "20",
+                  "yaw": 0,
+                  "pitch": -33,
+                  "text": "20TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "24",
+                  "yaw": -90,
+                  "pitch": -45,
+                  "text": "24TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "20": {
+              "panorama": "/pics/virtualtourpics/20.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 90,
+              "floorPlanX": 529,
+              "floorPlanY": 459,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "11",
+                  "yaw": 90,
+                  "pitch": -35,
+                  "text": "11TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "19",
+                  "yaw": 180,
+                  "pitch": -35,
+                  "text": "19TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "22",
+                  "yaw": 0,
+                  "pitch": -43,
+                  "text": "22ND",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "23",
+                  "yaw": -90,
+                  "pitch": -40,
+                  "text": "23RD",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "22": {
+              "panorama": "/pics/virtualtourpics/22.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -49,
+              "floorPlanX": 529,
+              "floorPlanY": 589,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "9",
+                  "yaw": 140,
+                  "pitch": -40,
+                  "text": "9TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "20",
+                  "yaw": -40,
+                  "pitch": -40,
+                  "text": "20TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "30",
+                  "yaw": 50,
+                  "pitch": -45,
+                  "text": "30TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "23": {
+              "panorama": "/pics/virtualtourpics/23.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -85,
+              "floorPlanX": 729,
+              "floorPlanY": 459,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "20",
+                  "yaw": -100,
+                  "pitch": -40,
+                  "text": "20TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "24",
+                  "yaw": -10,
+                  "pitch": -35,
+                  "text": "24TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "28",
+                  "yaw": 85,
+                  "pitch": -42,
+                  "text": "28TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "24": {
+              "panorama": "/pics/virtualtourpics/24.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -85,
+              "floorPlanX": 729,
+              "floorPlanY": 289,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "19",
+                  "yaw": -95,
+                  "pitch": -40,
+                  "text": "19TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "23",
+                  "yaw": 175,
+                  "pitch": -35,
+                  "text": "23RD",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "25",
+                  "yaw": -5,
+                  "pitch": -35,
+                  "text": "25TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "27",
+                  "yaw": 85,
+                  "pitch": -45,
+                  "text": "27TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "25": {
+              "panorama": "/pics/virtualtourpics/25.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 120,
+              "floorPlanX": 729,
+              "floorPlanY": 129,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "18",
+                  "yaw": 60,
+                  "pitch": -40,
+                  "text": "18TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "24",
+                  "yaw": -30,
+                  "pitch": -40,
+                  "text": "24TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "26",
+                  "yaw": -120,
+                  "pitch": -45,
+                  "text": "26TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "26": {
+              "panorama": "/pics/virtualtourpics/26.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 135,
+              "floorPlanX": 899,
+              "floorPlanY": 129,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "27",
+                  "yaw": -45,
+                  "pitch": -40,
+                  "text": "27TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "25",
+                  "yaw": 45,
+                  "pitch": -40,
+                  "text": "25TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "27": {
+              "panorama": "/pics/virtualtourpics/27.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 135,
+              "floorPlanX": 899,
+              "floorPlanY": 289,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "24",
+                  "yaw": 45,
+                  "pitch": -40,
+                  "text": "24TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "26",
+                  "yaw": 137,
+                  "pitch": -35,
+                  "text": "26TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "28",
+                  "yaw": -47,
+                  "pitch": -30,
+                  "text": "28TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "28": {
+              "panorama": "/pics/virtualtourpics/28.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -135,
+              "floorPlanX": 899,
+              "floorPlanY": 459,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "23",
+                  "yaw": -45,
+                  "pitch": -50,
+                  "text": "23RD",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "27",
+                  "yaw": 45,
+                  "pitch": -35,
+                  "text": "27TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "31",
+                  "yaw": -135,
+                  "pitch": -45,
+                  "text": "31ST",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "30": {
+              "panorama": "/pics/virtualtourpics/30.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 38,
+              "floorPlanX": 689,
+              "floorPlanY": 589,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-32",
+                  "yaw": -180,
+                  "pitch": -50,
+                  "title": "Schlafzimmer",
+                  "text": "Das Schlafzimmer im Loftstil bietet maximale Helligkeit und Luft zum Atmen und schirmt gleichzeitig durch die smart platzierten Trennwände ab. Schlafen Sie ein mit Blick hoch über Zürich.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "22",
+                  "yaw": 140,
+                  "pitch": -40,
+                  "text": "22ND",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "31",
+                  "yaw": -38,
+                  "pitch": -45,
+                  "text": "31ST",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "33",
+                  "yaw": 52,
+                  "pitch": -40,
+                  "text": "33RD",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "31": {
+              "panorama": "/pics/virtualtourpics/31.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 125,
+              "floorPlanX": 899,
+              "floorPlanY": 589,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-33",
+                  "yaw": 67.5,
+                  "pitch": -26.8,
+                  "title": "Schlafzimmer",
+                  "text": "Das Schlafzimmer im Loftstil bietet maximale Helligkeit und Luft zum Atmen und schirmt gleichzeitig durch die smart platzierten Trennwände ab. Schlafen Sie ein mit Blick hoch über Zürich.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "28",
+                  "yaw": 145,
+                  "pitch": -50,
+                  "text": "28TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "30",
+                  "yaw": 55,
+                  "pitch": -40,
+                  "text": "30TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "32",
+                  "yaw": -35,
+                  "pitch": -40,
+                  "text": "32ND",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "32": {
+              "panorama": "/pics/virtualtourpics/32.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 100,
+              "floorPlanX": 899,
+              "floorPlanY": 729,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-33",
+                  "yaw": 126.19,
+                  "pitch": -18.8,
+                  "title": "Schlafzimmer",
+                  "text": "Das Schlafzimmer im Loftstil bietet maximale Helligkeit und Luft zum Atmen und schirmt gleichzeitig durch die smart platzierten Trennwände ab. Schlafen Sie ein mit Blick hoch über Zürich.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "31",
+                  "yaw": 170,
+                  "pitch": -40,
+                  "text": "31ST",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "33",
+                  "yaw": 80,
+                  "pitch": -45,
+                  "text": "33RD",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "34",
+                  "yaw": -10,
+                  "pitch": -40,
+                  "text": "34TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "33": {
+              "panorama": "/pics/virtualtourpics/33.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 0,
+              "floorPlanX": 689,
+              "floorPlanY": 729,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-31",
+                  "yaw": -111,
+                  "pitch": -26,
+                  "title": "Schlafzimmer",
+                  "text": "Das Schlafzimmer im Loftstil bietet maximale Helligkeit und Luft zum Atmen und schirmt gleichzeitig durch die smart platzierten Trennwände ab. Schlafen Sie ein mit Blick hoch über Zürich.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "30",
+                  "yaw": -90,
+                  "pitch": -40,
+                  "text": "30TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "32",
+                  "yaw": 0,
+                  "pitch": -40,
+                  "text": "32ND",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "35",
+                  "yaw": 95,
+                  "pitch": -40,
+                  "text": "35TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "34": {
+              "panorama": "/pics/virtualtourpics/34.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -135,
+              "floorPlanX": 899,
+              "floorPlanY": 859,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-1",
+                  "yaw": 18,
+                  "pitch": -14,
+                  "title": "Schlafzimmer",
+                  "text": "Das Schlafzimmer im Loftstil bietet maximale Helligkeit und Luft zum Atmen und schirmt gleichzeitig durch die smart platzierten Trennwände ab. Schlafen Sie ein mit Blick hoch über Zürich.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "32",
+                  "yaw": 50,
+                  "pitch": -45,
+                  "text": "32ND",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "35",
+                  "yaw": -45,
+                  "pitch": -35,
+                  "text": "35TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "41",
+                  "yaw": -135,
+                  "pitch": -40,
+                  "text": "41ST",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "35": {
+              "panorama": "/pics/virtualtourpics/35.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -40,
+              "floorPlanX": 659,
+              "floorPlanY": 859,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-30",
+                  "yaw": -53,
+                  "pitch": -15,
+                  "title": "Schlafzimmer",
+                  "text": "Das Schlafzimmer im Loftstil bietet maximale Helligkeit und Luft zum Atmen und schirmt gleichzeitig durch die smart platzierten Trennwände ab. Schlafen Sie ein mit Blick hoch über Zürich.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "33",
+                  "yaw": -45,
+                  "pitch": -45,
+                  "text": "33RD",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "34",
+                  "yaw": 40,
+                  "pitch": -35,
+                  "text": "34TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "36",
+                  "yaw": -140,
+                  "pitch": -45,
+                  "text": "36TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "36": {
+              "panorama": "/pics/virtualtourpics/36.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": -45,
+              "floorPlanX": 529,
+              "floorPlanY": 859,
+              "hotSpots": [
+                {
+                  "type": "scene",
+                  "sceneKey": "9",
+                  "yaw": -46,
+                  "pitch": -40,
+                  "text": "9TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "35",
+                  "yaw": 45,
+                  "pitch": -40,
+                  "text": "35TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "44",
+                  "yaw": 135,
+                  "pitch": -40,
+                  "text": "44TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "41": {
+              "panorama": "/pics/virtualtourpics/41.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 155,
+              "floorPlanX": 869,
+              "floorPlanY": 1019,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-22",
+                  "yaw": 36.26,
+                  "pitch": -2.14,
+                  "title": "Lavabo",
+                  "text": "Sensorgesteuerte Wasserhäne für maximalen Komfort.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "34",
+                  "yaw": 120,
+                  "pitch": -35,
+                  "text": "34TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "42",
+                  "yaw": 25,
+                  "pitch": -35,
+                  "text": "42ND",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "42": {
+              "panorama": "/pics/virtualtourpics/42.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 0,
+              "floorPlanX": 699,
+              "floorPlanY": 1029,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-21",
+                  "yaw": -163,
+                  "pitch": -4.23,
+                  "title": "Lavabo",
+                  "text": "Sensorgesteuerte Wasserhäne für maximalen Komfort.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "41",
+                  "yaw": 0,
+                  "pitch": -40,
+                  "text": "41ST",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "44",
+                  "yaw": 180,
+                  "pitch": -40,
+                  "text": "44TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "44": {
+              "panorama": "/pics/virtualtourpics/44.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 30,
+              "floorPlanX": 529,
+              "floorPlanY": 989,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-2",
+                  "yaw": -179,
+                  "pitch": -17,
+                  "title": "Lavabo",
+                  "text": "Sensorgesteuerte Wasserhäne für maximalen Komfort.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "36",
+                  "yaw": -125,
+                  "pitch": -40,
+                  "text": "36TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "42",
+                  "yaw": -25,
+                  "pitch": -40,
+                  "text": "42ND",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "46",
+                  "yaw": 37,
+                  "pitch": -50,
+                  "text": "46TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            },
+            "46": {
+              "panorama": "/pics/virtualtourpics/46.jpg",
+              "yaw": 0,
+              "pitch": 0,
+              "hfov": 120,
+              "northOffset": 25,
+              "floorPlanX": 579,
+              "floorPlanY": 1089,
+              "hotSpots": [
+                {
+                  "type": "info",
+                  "id": "tag-id-20",
+                  "yaw": -156,
+                  "pitch": -7.5,
+                  "title": "Lavabo",
+                  "text": "Sensorgesteuerte Wasserhäne für maximalen Komfort.",
+                  "cssClass": "custom-tag-symbol"
+                },
+                {
+                  "type": "scene",
+                  "sceneKey": "44",
+                  "yaw": -150,
+                  "pitch": -50,
+                  "text": "44TH",
+                  "targetYaw": "sameAzimuth",
+                  "targetPitch": 0,
+                  "targetHfov": 120,
+                  "cssClass": "custom-hotspot-symbol"
+                }
+              ]
+            }
+          },
+          "floorPlanImage": null,
+          "property_floor_id": "5f0211825737e805dc8e61b9"
+        }
+      }
+    ],
+    "features": {
+      "is_floor_plan_active": false,
+      "is_google_map_active": false,
+      "is_linked_tours_active": false
+    }
+  }
+]
