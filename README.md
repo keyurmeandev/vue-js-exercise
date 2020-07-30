@@ -37,6 +37,11 @@ This fix should work on firefox/chrome/safari/edge (last 2 version at-least).
 
 ----
 
+## Solution:
+
+I have tried to follow the first method to apply the overalay, change the slide and then remove the overlay.
+I have verified it in firefox and the jerky animation thing is not appearing.
+
 ### Links:
 [Pannellum Docs](https://pannellum.org/documentation/overview/)
 
