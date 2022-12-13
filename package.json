@@ -6,7 +6,7 @@
   "copyright": "Copyright 2020 RealbotEngineering GmbH",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "hbs": "^4.1.1"
   },
   "scripts": {
